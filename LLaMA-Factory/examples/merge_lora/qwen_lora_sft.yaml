@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /root/paddlejob/workspace/llm/Qwen2.5-32B-Instruct
+adapter_name_or_path: /root/paddlejob/workspace/trained_models/reasonrank_32b_sft_lora/checkpoint-530
+template: qwen
+trust_remote_code: true
+
+### export
+export_dir: /root/paddlejob/workspace/trained_models/reasonrank_32b_sft
+export_size: 5
+export_device: cpu  # choices: [cpu, auto]
+export_legacy_format: false

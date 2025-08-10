@@ -1,0 +1,21 @@
+[
+    {
+        "model_path": "/root/paddlejob/workspace//trained_models/reasonrank-7B",
+        "lora_path": null,
+        "datetime": "2025-08-10 00:03:38.699003",
+        "retrieval_method": "reasonir",
+        "retrieval_num": 100,
+        "rerank_topk": 100,
+        "current_pass": 1,
+        "window_size": 20,
+        "step_size": 10,
+        "shuffle_candidates": false,
+        "time_cost": 240.75764155387878,
+        "total_input_tokens": 4561849,
+        "total_output_tokens": 558125,
+        "notes": "",
+        "NDCG@1": "28.71",
+        "NDCG@5": "30.09",
+        "NDCG@10": "30.70"
+    }
+]

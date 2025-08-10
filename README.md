@@ -28,26 +28,26 @@
 - **[Aug 10, 2025]**: 🔥 We released our reasoning-intensive reranker **[🤗reasonrank-7B](https://huggingface.co/liuwenhan/reasonrank-7B)** and **[🤗reasonrank-32B](https://huggingface.co/liuwenhan/reasonrank-32B)**.
 - **[Aug 10, 2025]**: 🚀 We released our full codebase, including inference, SFT training, and RL training.
 
-
 ## 📋 Table of Contents
 
-- [1. ReasonRank](#🔧✨tool-star-empowering-llm-brained-multi-tool-reasoner-via-reinforcement-learning)
-  - [1.1 Overview](#-overall-performance)
-  - [1.2 Overall Performance](#-overall-performance)
-- [2. The Introduction of ReasonRank Training Data](#-quick-start-for-training)
-- [3. Quick Start](#-quick-start-for-training)
-  - [3.1 How to run ReasonRank](#-cold-start-sft)
-    - [Environment Setup](#1-environment-setup)
-    - [Inference](#2-fine-tuning-model)
-  - [3.2 Cold-Start SFT](#-cold-start-sft)
-    - [Environment Setup](#1-environment-setup)
-    - [Fine-Tuning Model](#2-fine-tuning-model)
-  - [3.3 Multiview reward ranking RL](#-self-critic-rl-stage)
-    - [Environment Setup](#1-environment-setup-1)
-    - [Vanilla RL Training](#2-vanilla-rl-training)
-    - [Optional: Self-Critic DPO Training](#3-self-critic-dpo-training-optional)
-  - [3.4 Performance of ReasonRank](#-performance-of-tool-star-models)
-- [Citation](#-citation)
+- [1. ReasonRank](#1-reasonrank)
+  - [1.1 Overview](#11-overview)
+  - [1.2 Overall Performance](#12-overall-performance)
+- [2. The Introduction of ReasonRank Training Data](#2-the-introduction-of-reasonrank-training-data)
+- [3. Quick Start](#3-quick-start)
+  - [3.1 How to run ReasonRank](#31-how-to-run-reasonrank)
+    - [3.1.1 Environment and Preparation](#311-environment-and-preparation)
+    - [3.1.2 Inference on BRIGHT with ReasonIR](#312-inference-on-bright-with-reasonir)
+    - [3.1.3 Inference on BRIGHT with Custom Retrieval Results](#313-inference-on-bright-with-custom-retrieval-results)
+    - [3.1.4 Codes for Constructing our Input Prompt](#314-codes-for-constructing-our-input-prompt)
+  - [3.2 Cold-Start SFT](#32-cold-start-sft)
+    - [3.2.1 Environment Setup](#321-environment-setup)
+    - [3.2.2 Supervised Fine-Tuning](#322-supervised-fine-tuning)
+  - [3.3 Multiview reward ranking RL](#33-multiview-reward-ranking-rl)
+    - [3.3.1 Environment Setup](#331-environment-setup)
+    - [3.3.2 GRPO Training](#332-grpo-training)
+  - [3.4 Performance of ReasonRank](#34-performance-of-reasonrank)
+- [Citation](#citation)
 
 ## 1. ReasonRank
 
@@ -60,11 +60,13 @@
 </p>
 
 
+
 Based on the training data, we design a two-stage training approach including **cold-start SFT** and **multi-view ranking reward RL** to inject listwise ranking ability to our ReasonRank.
 
 <p align="center">
 <img width="80%" alt="image" src="https://8421bcd.oss-cn-beijing.aliyuncs.com/img/image-20250809002546838.png" />
 </p>
+
 
 ### 📊 1.2 Overall Performance
 
@@ -75,10 +77,9 @@ When using ReasonIR as initial passage retriever, our ReasonRank demonstrates st
 </p>
 
 
-
 Besides, when using a higher-quality retrieval results (RaDeR + BM25 hybrid, provided by [RaDeR](https://github.com/Debrup-61/RaDeR/blob/main/BRIGHT_score_files/RaDeR-gte-Qwen2-LLMq_CoT_lexical/aops/hybrid_BM25_Rader.json)), our ReasonRank (32B) achieves SOTA performance **40.8** on [BRIGHT leaderboard](https://brightbenchmark.github.io/).
 
-## ⚡ 2. The Introduction of ReasonRank Training Data
+## 📂 2. The Introduction of ReasonRank Training Data
 
 An important contribution of our work is our reasoning-intensive training data ([reasonrank_data_13k](https://huggingface.co/datasets/liuwenhan/reasonrank_data_13k)). The dataset fields of ``training_data_all.jsonl`` are as follows:
 
@@ -392,6 +393,7 @@ Remember to change the ``actor_rollout_ref.model.path`` to the path of your SFT 
 <p align="center">
 <img width="90%" alt="image" src="https://8421bcd.oss-cn-beijing.aliyuncs.com/img/image-20250810163757771.png" />
 </p>
+
 ## 📄 Citation
 
 If you find this work helpful, please cite our papers:
@@ -417,3 +419,4 @@ For any questions or feedback, please reach out to us at [lwh@ruc.edu.cn](lwh@ru
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=8421bcd/reasonrank&type=Date)](https://www.star-history.com/#8421bcd/reasonrank&Date)
+

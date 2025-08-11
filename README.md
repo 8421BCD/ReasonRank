@@ -115,7 +115,7 @@ An important contribution of our work is our reasoning-intensive training data (
 
 #### **Application**
 
-1. Training passage reranker: Given the reranked passage list, one can use our data to training a listwise reranker
+1. Training passage reranker: Given the reranked passage list, one can use our data to train a listwise reranker
 2. Training passage retriever: Using the **`relevant_docids`** and the remaining irrelevant ids, one can train a passage retriever.
 
 ## ⚡ 3. Quick Start

@@ -125,8 +125,6 @@ The statistics of dataset is shown in the figure below:
 
 ### **📘** 3.1 How to run ReasonRank
 
-> Note that the results of reproducing ReasonRank may vary slightly due to the randomness of sampling strategy and different versions of vllm.
-
 #### 3.1.1 Environment and Preparation
 
 ##### Environment
@@ -182,7 +180,7 @@ For running [reasonrank-7B](https://huggingface.co/liuwenhan/reasonrank-7B) or [
 bash run_rank_llm.sh
 ```
 
-The script ``run_rank_llm.sh`` includes the running command for both models.
+The script ``run_rank_llm.sh`` includes the running command for both models. Note that the results of reproducing ReasonRank may vary slightly due to the randomness of sampling strategy and different versions of vllm.
 
 #### 3.1.3 Inference on BRIGHT with Custom Retrieval Results
 

@@ -22,8 +22,6 @@
 
 ## 📣 Latest News
 
-- **[Aug 11, 2025]**: 🏆 Our ReasonRank (32B) has achieved **SOTA performance 40.8** on **[BRIGHT leaderboard](https://brightbenchmark.github.io/)**!
-- **[Aug 11, 2025]**: 📄 We uploaded our paper to the **[arXiv](https://arxiv.org/pdf/2505.16410)** and **[Hugging Face](https://huggingface.co/papers/2505.16410)**.
 - **[Aug 10, 2025]**: 🔥 We released our **[🤗full reasonrank training data (13k)](https://huggingface.co/datasets/liuwenhan/reasonrank_data_13k)**, **[🤗cold-start SFT data](https://huggingface.co/datasets/liuwenhan/reasonrank_data_sft)** and **[🤗RL data](https://huggingface.co/datasets/liuwenhan/reasonrank_data_rl)**.
 - **[Aug 10, 2025]**: 🔥 We released our reasoning-intensive reranker **[🤗reasonrank-7B](https://huggingface.co/liuwenhan/reasonrank-7B)** and **[🤗reasonrank-32B](https://huggingface.co/liuwenhan/reasonrank-32B)**.
 - **[Aug 10, 2025]**: 🚀 We released our full codebase, including inference, SFT training, and RL training.

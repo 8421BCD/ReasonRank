@@ -98,6 +98,11 @@ An important contribution of our work is our reasoning-intensive training data (
    - The ids of relevant passages in ``initial_list`` mined by DeepSeek-R1. The remaining passage ids in ``initial_list`` are irrelevant ones. 
    - Note that **`relevant_docids`** are not necessarily ranked at the top of **`final_list`** by the DeepSeek-R1, which may stem from inconsistencies in DeepSeek-R1’s judgments. To address this, you can apply the **self-consistency data filtering** technique proposed in our paper to select higher-quality data.
 
+The statistics of dataset is shown in the figure below:
+<p align="center">
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/c04b9d1a-2f21-46f1-b23d-ad1f50d22fb8" />
+</p>
+
 #### **Example Entry**
 
 ```json

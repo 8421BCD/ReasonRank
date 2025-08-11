@@ -169,7 +169,7 @@ pip install blobfile
 
 **b.** Download the bright.zip from [here](https://drive.google.com/file/d/1VKhHeiThCbziBbtMV-AOEfMjgFR7kYa5/view?usp=sharing) which contains the corpus of BRIGHT datasets, unzip it and put it under ``{WORKSPACE_DIR}/data`` directory.
 
-**c. ** Install jdk (we use jdk-11.0.8 in our work, other versions will also be okey)
+**c.** Install jdk (we use jdk-11.0.8 in our work, other versions will also be okey)
 
 #### 3.1.2 Inference on BRIGHT with ReasonIR
 

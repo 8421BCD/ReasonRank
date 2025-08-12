@@ -4,8 +4,8 @@
 <h1 align="center"> ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability</a></h1>
 
 <div align="center">
-<a href="https://arxiv.org/abs/2412.14574" target="_blank"><img src=https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv></a>
-<a href="https://img.shields.io/badge/Paper-Hugging%20Face-yellow?logo=huggingface" target="_blank"><img src=https://img.shields.io/badge/Paper-Hugging%20Face-yellow?logo=huggingface></a>
+<a href="https://arxiv.org/pdf/2508.07050" target="_blank"><img src=https://img.shields.io/badge/Paper-arXiv-b5212f.svg?logo=arxiv></a>
+<a href="https://huggingface.co/papers/2508.07050" target="_blank"><img src=https://img.shields.io/badge/Paper-Hugging%20Face-yellow?logo=huggingface></a>
 <a href="https://opensource.org/licenses/MIT"><img alt="License" src="https://img.shields.io/badge/LICENSE-MIT-green.svg"></a>
 <a href="https://www.python.org/downloads/release/python-3100/"><img alt="Static Badge" src="https://img.shields.io/badge/Python-3.10+-blue.svg"></a>
 </div>

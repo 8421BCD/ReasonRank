@@ -429,4 +429,3 @@ For any questions or feedback, please reach out to us at [lwh@ruc.edu.cn](lwh@ru
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=8421bcd/reasonrank&type=Date)](https://www.star-history.com/#8421bcd/reasonrank&Date)
-

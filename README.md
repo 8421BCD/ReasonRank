@@ -22,7 +22,7 @@
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub.</h5>
 
 ## 📣 Latest News
-- **[Aug 15, 2025]**: We released our datasets and models on **[ModelScope](https://modelscope.cn/collections/ReasonRank-14a53a35707a46)**!
+- **[Aug 15, 2025]**:🔥 We released our datasets and models on **[ModelScope](https://modelscope.cn/collections/ReasonRank-14a53a35707a46)**!
 - **[Aug 9, 2025]**: 🏆 Our ReasonRank (32B) has achieved **SOTA performance 40.8** on **[BRIGHT leaderboard](https://brightbenchmark.github.io/)**!
 - **[Aug 9, 2025]**: 📄 We uploaded our paper to the **[arXiv](https://arxiv.org/pdf/2508.07050)** and **[Hugging Face](https://huggingface.co/papers/2508.07050)**.
 - **[Aug 9, 2025]**: 🔥 We released our **[🤗full reasonrank training data (13k)](https://huggingface.co/datasets/liuwenhan/reasonrank_data_13k)**, **[🤗cold-start SFT data](https://huggingface.co/datasets/liuwenhan/reasonrank_data_sft)** and **[🤗RL data](https://huggingface.co/datasets/liuwenhan/reasonrank_data_rl)**.

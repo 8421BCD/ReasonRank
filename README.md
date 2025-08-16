@@ -403,14 +403,11 @@ Remember to change the ``actor_rollout_ref.model.path`` to the path of your SFT 
 If you find this work helpful, please cite our papers:
 
 ```bibtex
-@misc{liu2025reasonrankempoweringpassageranking,
-      title={ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability}, 
-      author={Wenhan Liu and Xinyu Ma and Weiwei Sun and Yutao Zhu and Yuchen Li and Dawei Yin and Zhicheng Dou},
-      year={2025},
-      eprint={2508.07050},
-      archivePrefix={arXiv},
-      primaryClass={cs.IR},
-      url={https://arxiv.org/abs/2508.07050}, 
+@article{liu2025reasonrank,
+  title={ReasonRank: Empowering Passage Ranking with Strong Reasoning Ability},
+  author={Liu, Wenhan and Ma, Xinyu and Sun, Weiwei and Zhu, Yutao and Li, Yuchen and Yin, Dawei and Dou, Zhicheng},
+  journal={arXiv preprint arXiv:2508.07050},
+  year={2025}
 }
 ```
 

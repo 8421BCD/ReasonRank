@@ -22,6 +22,7 @@
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub.</h5>
 
 ## 📣 Latest News
+- **[Aug 16, 2025]**: 🏆 Our ReasonRank (32B) has achieved **SOTA performance 42.85** on **[R2MED leaderboard](https://r2med.github.io/)**!
 - **[Aug 15, 2025]**:🔥 We released our datasets and models on **[ModelScope](https://modelscope.cn/collections/ReasonRank-14a53a35707a46)**!
 - **[Aug 9, 2025]**: 🏆 Our ReasonRank (32B) has achieved **SOTA performance 40.8** on **[BRIGHT leaderboard](https://brightbenchmark.github.io/)**!
 - **[Aug 9, 2025]**: 📄 We uploaded our paper to the **[arXiv](https://arxiv.org/pdf/2508.07050)** and **[Hugging Face](https://huggingface.co/papers/2508.07050)**.

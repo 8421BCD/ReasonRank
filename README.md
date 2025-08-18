@@ -172,7 +172,7 @@ pip install blobfile
     └── ...
 ```
 
-**b.** Download the bright.zip from [here](https://drive.google.com/file/d/1VKhHeiThCbziBbtMV-AOEfMjgFR7kYa5/view?usp=sharing) which contains the corpus of BRIGHT datasets, unzip it and put it under ``{WORKSPACE_DIR}/data`` directory.
+**b.** Download the [bright.zip](https://drive.google.com/file/d/1VKhHeiThCbziBbtMV-AOEfMjgFR7kYa5/view?usp=sharing) and [r2med.zip](https://drive.google.com/file/d/1yOrqNLr-tQYCTk0K23Y4uQTVuwoPv9hI/view?usp=drive_link) which contain the queries, qrel files and corpus of BRIGHT and R2MED datasets, unzip them and put them under ``{WORKSPACE_DIR}/data`` directory respectively.
 
 **c.** Install jdk (we use jdk-11.0.8 in our work, other versions will also be okey)
 

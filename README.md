@@ -100,7 +100,7 @@ An important contribution of our work is our reasoning-intensive training data (
    - A  **step-by-step reasoning chain** outputted by DeepSeek-R1 while performing the listwise reranking.
 6. **`relevant_docids`** *(List[str])*
    - The ids of relevant passages in ``initial_list`` mined by DeepSeek-R1. The remaining passage ids in ``initial_list`` are irrelevant ones. 
-   - Note that **`relevant_docids`** are not necessarily ranked at the top of **`final_list`** by the DeepSeek-R1, which may stem from inconsistencies in DeepSeek-R1’s judgments. To address this, you can apply the **self-consistency data filtering** technique proposed in our paper to select higher-quality data.
+   - Note that **`relevant_docids`** are not necessarily ranked at the top of **`final_list`** by the DeepSeek-R1, which may stem from inconsistencies in DeepSeek-R1’s judgments. To address this, you can apply the **self-consistency data filtering** technique proposed in our paper to further select higher-quality data (i.e., evaluating the NDCG@10 of final_list using relevant_docids and only keep the ones with NDCG@10 higher than a threshold. Note that the threshold is set as 0.4 in our paper, you could try to increase it for constructing higher-quality data if you want.).
 
 The statistics of dataset is shown in the figure below:
 <p align="center">

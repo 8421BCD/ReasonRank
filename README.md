@@ -409,7 +409,7 @@ If you find this work helpful, please cite our papers:
   author={Liu, Wenhan and Ma, Xinyu and Sun, Weiwei and Zhu, Yutao and Li, Yuchen and Yin, Dawei and Dou, Zhicheng},
   journal={arXiv preprint arXiv:2508.07050},
   year={2025}
-}
+}}
 ```
 
 

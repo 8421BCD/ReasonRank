@@ -192,7 +192,7 @@ To inference with custom retrieval results, you need to put the TREC-format retr
 
 #### 3.1.4 Codes for Constructing our Input Prompt
 
-The core codes for constructing our ReasonRank prompt is shown in ``create_prompt`` function in ``rerank/rank_listwise_os_llm.py`` file. **If you reproduce ReasonRank in your own project, please strictly use the same method for constructing the prompt to ensure ReasonRank's performance.**
+The core codes for constructing our ReasonRank prompt is shown in ``create_prompt`` function in ``rerank/rank_listwise_os_llm.py`` file. **If you reproduce ReasonRank in your own project, please strictly use the same method for constructing the prompt to ensure ReasonRank's performance.**. Note that the parameter ``prompt_mode`` used for our ReasonRank is ``PromptMode.RANK_GPT_reasoning``.
 
 ```python
 def create_prompt(self, result: Result, rank_start: int, rank_end: int) -> Tuple[str, int]:
@@ -204,7 +204,7 @@ def create_prompt(self, result: Result, rank_start: int, rank_end: int) -> Tuple
 
     #################### core codes for constructing the input ####################
     messages = []
-    if self.args.prompt_mode == str(PromptMode.RANK_GPT_reasoning):  # for non-reasoning model such as qwen2.5
+    if self.args.prompt_mode == str(PromptMode.RANK_GPT_reasoning):  # for our ReasonRank model as well as some non-reasoning models such as qwen2.5-instruct
         messages.append({"role": "system", "content": self.prompt_info['system_prompt_reasoning']})
     elif self.args.prompt_mode in [str(PromptMode.RANK_GPT), str(PromptMode.RANK_GPT_qwen3)]:
         messages.append({"role": "system", "content": self.prompt_info['system_prompt']})

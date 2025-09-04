@@ -22,6 +22,7 @@
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub.</h5>
 
 ## 📣 Latest News
+- **[Sep 4, 2025]**: 🔔🔔🔔 For more convenient reproduction of our ReasonRank (32B) in your own codes, we have merged the LoRA parameters of ReasonRank (32B) into corresponding checkpoint shards, so now everyone only needs to load the checkpoint shards without the LoRA adapter anymore. The LoRA adapter directory has been removed from the model directory.
 - **[Aug 16, 2025]**:🏆 Our ReasonRank (32B) has achieved **SOTA performance 42.85** on **[R2MED leaderboard](https://r2med.github.io/)**!
 - **[Aug 15, 2025]**:🔥 We released our datasets and models on **[ModelScope](https://modelscope.cn/collections/ReasonRank-14a53a35707a46)**!
 - **[Aug 9, 2025]**: 🏆 Our ReasonRank (32B) has achieved **SOTA performance 40.8** on **[BRIGHT leaderboard](https://brightbenchmark.github.io/)**!

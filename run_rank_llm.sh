@@ -58,7 +58,6 @@ model_name=reasonrank-32B
 DATASETS=('economics')
 python run_rank_llm.py \
     --model_path ${workspace_dir}/trained_models/${model_name} \
-    --lora_path ${workspace_dir}/trained_models/${model_name}/lora_adapter \
     --window_size $window_size \
     --step_size 10 \
     --retrieval_num 100 \

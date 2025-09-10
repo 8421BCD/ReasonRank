@@ -173,7 +173,7 @@ pip install blobfile
     └── ...
 ```
 
-**b**. Download the [bright.zip](https://drive.google.com/file/d/1UST2ie0PEcLSA7fnnb9aJ_dzh6HmEQW3/view?usp=drive_link) and [r2med.zip](https://drive.google.com/file/d/1yOrqNLr-tQYCTk0K23Y4uQTVuwoPv9hI/view?usp=drive_link) which contain the corpus of BRIGHT and R2MED datasets, unzip them and put them under {WORKSPACE_DIR}/data directory respectively.
+**b**. Download the [bright](https://huggingface.co/datasets/liuwenhan/bright) and [r2med](https://huggingface.co/datasets/liuwenhan/r2med) which contain the corpus of BRIGHT and R2MED datasets, unzip them and put them under {WORKSPACE_DIR}/data directory respectively. (Modelscope download links are also available at [bright](https://modelscope.cn/datasets/lwhlwh/bright) and [r2med](https://modelscope.cn/datasets/lwhlwh/r2med))
 
 **c.** Install jdk (we use jdk-11.0.8 in our work, other versions will also be okey)
 

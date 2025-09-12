@@ -22,7 +22,7 @@
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub.</h5>
 
 ## 📣 Latest News
-- **[Sep 5, 2025]**: 🔔 Our ReasonRank has been integrated into the [RankLLM framework](https://github.com/castorini/rank_llm). You can use the RankLLM framework to run our ReasonRank.
+- **[Sep 5, 2025]**: 🔔 Our ReasonRank has been integrated into the [RankLLM framework](https://github.com/castorini/rank_llm). You can use the [codes](https://github.com/castorini/rank_llm/blob/e84b530d7c81cc6c5bc42cb8ca66932ac8c1a276/src/rank_llm/demo/rerank_reasonrank_bm25_beir.py#L4) of RankLLM to run our ReasonRank.
 - **[Sep 4, 2025]**: 🔔🔔🔔 For more convenient reproduction of our ReasonRank (32B) in your own codes, we have merged the LoRA parameters of ReasonRank (32B) into corresponding checkpoint shards, so now everyone only needs to load the checkpoint shards of **[🤗reasonrank-32B](https://huggingface.co/liuwenhan/reasonrank-32B)** without the LoRA adapter anymore. The LoRA adapter directory has been removed from the model directory.
 - **[Aug 16, 2025]**:🏆 Our ReasonRank (32B) has achieved **SOTA performance 42.85** on **[R2MED leaderboard](https://r2med.github.io/)**!
 - **[Aug 15, 2025]**:🔥 We released our datasets and models on **[ModelScope](https://modelscope.cn/collections/ReasonRank-14a53a35707a46)**!

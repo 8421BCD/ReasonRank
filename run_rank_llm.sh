@@ -8,10 +8,10 @@ workspace_dir=$(grep "WORKSPACE_DIR" config.py | cut -d "'" -f 2)
 # DATASETS=('r2med_Biology' 'r2med_Bioinformatics' 'r2med_Medical-Sciences' 'r2med_MedXpertQA-Exam' 'r2med_MedQA-Diag' 'r2med_PMC-Treatment' 'r2med_PMC-Clinical' 'r2med_IIYi-Clinical')
 ################ evaluate reasonrank-7B using ReasonIR retrieval #################
 window_size=20
-model_name=reasonrank-7B
+model_name=liuwenhan/reasonrank-7B
 DATASETS=('economics')
 python run_rank_llm.py \
-    --model_path ${workspace_dir}/trained_models/${model_name} \
+    --model_path ${model_name} \
     --window_size $window_size \
     --step_size 10 \
     --retrieval_num 100 \
@@ -32,10 +32,10 @@ python run_rank_llm.py \
 
 ################ evaluate reasonrank-7B using custom retrieval #################
 window_size=20
-model_name=reasonrank-7B
+model_name=liuwenhan/reasonrank-7B
 DATASETS=('economics')
 python run_rank_llm.py \
-    --model_path ${workspace_dir}/trained_models/${model_name} \
+    --model_path ${model_name} \
     --retrieval_results_name custom.txt \
     --window_size $window_size \
     --step_size 10 \
@@ -54,10 +54,10 @@ python run_rank_llm.py \
 
 ################ evaluate reasonrank-32B using ReasonIR retrieval #################
 window_size=20
-model_name=reasonrank-32B
+model_name=liuwenhan/reasonrank-32B
 DATASETS=('economics')
 python run_rank_llm.py \
-    --model_path ${workspace_dir}/trained_models/${model_name} \
+    --model_path ${model_name} \
     --window_size $window_size \
     --step_size 10 \
     --retrieval_num 100 \

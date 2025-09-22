@@ -181,7 +181,7 @@ pip install blobfile
 
 #### 3.1.2 Inference on BRIGHT with ReasonIR
 
-For running [reasonrank-7B](https://huggingface.co/liuwenhan/reasonrank-7B) or [reasonrank-32B](https://huggingface.co/liuwenhan/reasonrank-32B), please first download the corresponding model checkpoint and put it under ``{WORKSPACE_DIR}/trained_models`` directory. Then, run the following command under ``{PROJECT_DIR}``.
+For running [reasonrank-7B](https://huggingface.co/liuwenhan/reasonrank-7B) or [reasonrank-32B](https://huggingface.co/liuwenhan/reasonrank-32B), please run the following command under ``{PROJECT_DIR}``.
 
 ```shell
 bash run_rank_llm.sh

@@ -3,8 +3,6 @@ export VLLM_ATTENTION_BACKEND=XFORMERS
 export HYDRA_FULL_ERROR=1
 workspace_dir=$(grep "WORKSPACE_DIR" ../config.py | cut -d "'" -f 2)
 project_dir=$(grep "PROJECT_DIR" ../config.py | cut -d "'" -f 2)
-bash ${workspace_dir}/env_run/train_bert/clear_gpu.sh
-bash ${workspace_dir}/env_run/train_bert/stop_gpu.sh
 
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
@@ -55,8 +53,3 @@ python3 -m verl.trainer.main_ppo \
     trainer.test_freq=100 \
     trainer.total_epochs=1 $@
 
-
-current_dir=$PWD
-cd ${workspace_dir}/env_run/train_bert/
-bash train_bert.sh
-cd $current_dir

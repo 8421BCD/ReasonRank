@@ -9,7 +9,7 @@ workspace_dir=$(grep "WORKSPACE_DIR" config.py | cut -d "'" -f 2)
 ################ evaluate reasonrank-7B using ReasonIR retrieval #################
 window_size=20
 model_name=liuwenhan/reasonrank-7B
-DATASETS=('economics')
+DATASETS=('economics' 'earth_science' 'robotics' 'biology' 'psychology' 'stackoverflow' 'sustainable_living' 'leetcode' 'pony' 'aops' 'theoremqa_questions' 'theoremqa_theorems')
 python run_rank_llm.py \
     --model_path ${model_name} \
     --window_size $window_size \
@@ -33,7 +33,7 @@ python run_rank_llm.py \
 ################ evaluate reasonrank-7B using custom retrieval #################
 window_size=20
 model_name=liuwenhan/reasonrank-7B
-DATASETS=('economics')
+DATASETS=('economics' 'earth_science' 'robotics' 'biology' 'psychology' 'stackoverflow' 'sustainable_living' 'leetcode' 'pony' 'aops' 'theoremqa_questions' 'theoremqa_theorems')
 python run_rank_llm.py \
     --model_path ${model_name} \
     --retrieval_results_name custom.txt \
@@ -55,7 +55,7 @@ python run_rank_llm.py \
 ################ evaluate reasonrank-32B using ReasonIR retrieval #################
 window_size=20
 model_name=liuwenhan/reasonrank-32B
-DATASETS=('economics')
+DATASETS=('economics' 'earth_science' 'robotics' 'biology' 'psychology' 'stackoverflow' 'sustainable_living' 'leetcode' 'pony' 'aops' 'theoremqa_questions' 'theoremqa_theorems')
 python run_rank_llm.py \
     --model_path ${model_name} \
     --window_size $window_size \
@@ -68,6 +68,29 @@ python run_rank_llm.py \
     --datasets ${DATASETS[@]} \
     --shuffle_candidates False \
     --prompt_mode rank_GPT_reasoning \
+    --context_size 32768 \
+    --vllm_batched True \
+    --batch_size 512 \
+    --output "${model_name}.txt" \
+    --num_gpus 4 \
+    --notes ""
+
+################ evaluate reasonrank-8B (Qwen3-8B based) using ReasonIR retrieval (set prompt_mode as rank_GPT_qwen3) #################
+window_size=20
+model_name=liuwenhan/reasonrank-8B
+DATASETS=('economics' 'earth_science' 'robotics' 'biology' 'psychology' 'stackoverflow' 'sustainable_living' 'leetcode' 'pony' 'aops' 'theoremqa_questions' 'theoremqa_theorems')
+python run_rank_llm.py \
+    --model_path ${model_name} \
+    --window_size $window_size \
+    --step_size 10 \
+    --retrieval_num 100 \
+    --num_passes 1 \
+    --reasoning_maxlen 3072 \
+    --retrieval_method reasonir \
+    --use_gpt4cot_retrieval True \
+    --datasets ${DATASETS[@]} \
+    --shuffle_candidates False \
+    --prompt_mode rank_GPT_qwen3 \
     --context_size 32768 \
     --vllm_batched True \
     --batch_size 512 \
